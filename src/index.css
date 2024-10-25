@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  --font-family: "Karantina", sans-serif;
+  --second-family: "Inter", sans-serif;
+  font-family: var(--font-family), system-ui;
+  /* font-weight: 400; */
+  font-style: normal;
+  color: white;
+  /* border: 1px white solid; */
+  margin: 0;
+  padding: 0;
+}
+
+body
+,html {
+  background-color: rgb(2, 1, 10);
+  width: 100vw;
+  height: auto;
+  overflow-x: hidden;
+}
+
+strong,b {
+  font-family: var(--second-family);
+  font-weight: 600;
+}
+
+.nav {
+  font-family: var(--font-family);
+  font-weight: 400;
+}
+
+#links {
+  font-weight: 300;
+  align-items: flex-end;
+}
+
+.link {
+  font-family: var(--font-family);
+}
+
+.link:hover {
+   animation: 4s linkhover infinite;
+}
+
+@keyframes linkhover {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-50%);
+    font-size: 27px;
+  }
+  100% {
+    transform: translateY(10%);
+    font-size: 24px;
+  }
+}
+
+.avail {
+  border-radius: 50%;
+  animation: glow 1.5s infinite alternate;
+  animation-delay: 2s;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px 2px rgba(0, 255, 13, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 5px 5px rgba(0, 255, 13, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 5px 2px rgba(0, 255, 13, 0.8);
+  }
+}
+
+
+#circle {
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
+
+#paragraph, span {
+  font-family: var(--second-family);
+  font-weight: 300;
+  overflow-wrap: break-word;
+}
+
+.more {
+  font-family: var(--second-family);
+}
+
+#highlight {
+  filter: blur(15px);
+  opacity: .5;
+  background: linear-gradient(to right,rgb(241, 208, 19),rgb(13, 222, 236));
+}
+
+
+.highlights img:nth-child(2) {
+  transform: rotateX(30deg) rotateY(35deg) translate(-200px,-400px);
+  filter: blur(20px);
+}
+
+.highlights img:nth-child(3) {
+  transform: rotateX(30deg) rotateY(35deg) translate(600px,-600px);
+}
+
+.highlights img:nth-child(4) {
+  transform: rotateX(20deg) rotateY(30deg) translate(1100px,-600px);
+  filter: blur(10px);
+}
+
+.grad-anim {
+  transform: rotateX(30deg) rotateZ(60deg);
+}
+
+.grad-anim2 {
+  transform: rotateX(40deg) rotateZ(-80deg);
+}
+
+.cssanimation, .cssanimation span {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.cssanimation span {
+  display: inline-block;
+}
