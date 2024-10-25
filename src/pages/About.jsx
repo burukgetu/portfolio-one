@@ -11,7 +11,7 @@ function About() {
           <div className="flex flex-col-reverse gap-4 justify-center items-center">
           <p className="text-3xl sm:text-3xl max-w-[90%] lg:text-[40px] font-[300] leading-none
            text-center lg:text-start">
-            Hi, I&lsquo;m Biruk – a passionate Front-End Developer 
+            Hi, I&lsquo;m Biruk – a passionate Fullstack Developer 
             and Computer Science graduate who loves bringing ideas to life on the web. I blend clean code with creative design to craft engaging digital experiences. Always eager to 
             learn, innovate, and push the boundaries of web development.
           </p>

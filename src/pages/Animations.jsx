@@ -36,7 +36,7 @@ function Animations() {
     <div className="flex items-center justify-center">
       <p ref={textRef} id="paragraph" className="text-2xl mt-36 indent-12 break-words 
       hyphens-auto lg:indent-28 leading-none font-light sm:text-[44px] lg:text-[64px] w-[80vw] h-auto lg:break-normal">
-        I am a creative Front End Developer who crafts immersive digital experiences using
+        I am a creative Full Stack Developer who crafts immersive digital experiences using
         React, HTML, CSS, and JavaScript. I’m passionate about clean code, 
         user centric design, and pushing the boundaries of what’s possible on the web.
      </p>

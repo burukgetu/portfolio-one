@@ -1,6 +1,6 @@
 import { FaGithub } from "react-icons/fa"
 import { GrLinkedin } from "react-icons/gr"
-import myimage from "../assets/images/cropped.png";
+import myimage from "/my-img.png";
 import StaggeredText from "./StaggeredText";
 import { useEffect } from "react";
 import gsap from "gsap";
