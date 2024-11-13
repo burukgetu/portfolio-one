@@ -77,8 +77,12 @@ function Intro() {
           </p>
         </div>
         <div className="flex justify-end gap-4 mt-2 lg:self-end">
-           <FaGithub id="icons" className="w-8 h-8"/>
-           <GrLinkedin id="icons" className="w-8 h-8"/>
+          <a href={"https://github.com/burukgetu/"} target="_blank" rel="noopener noreferrer">
+            <FaGithub id="icons" className="w-8 h-8"/>
+          </a>
+          <a href={"https://www.linkedin.com/in/biruk-getu-786048320/"} target="_blank" rel="noopener noreferrer">
+            <GrLinkedin id="icons" className="w-8 h-8"/>
+          </a>
         </div>
       </div>
       <div className="w-[320px] h-[320px] relative lg:w-[40vw] lg:h-[40vw] z-10">

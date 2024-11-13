@@ -1,8 +1,26 @@
 import { FaGithub, FaGoogle } from "react-icons/fa"
 import { GrLinkedin } from "react-icons/gr"
+import toast, { Toaster } from 'react-hot-toast';
 
 
 function Footer() {
+
+  function copyToClipboard() {
+    navigator.clipboard.writeText("burukgetu000@gmail.com").then(function() {
+      toast.success('Email address copied to clipboard', {
+        style: {
+          backgroundColor: '#000', // Green background
+          color: '#fff',              // White text color
+          fontSize: '26px',           // Font size
+          padding: '10px 20px',       // Padding for the toast
+          borderRadius: '8px'         // Rounded corners
+        }
+      });
+    }).catch(function(err) {
+      console.error('Error copying text to clipboard: ', err);
+    });
+  }
+
   return (
     <div className="w-full flex flex-col justify-center items-center md:mt-80">
       <div className="flex sm:gap-4 flex-col justify-center items-center border-2 
@@ -15,9 +33,18 @@ function Footer() {
           Open to exciting opportunities – feel free to reach out.
         </p>
         <div className="flex justify-center items-center gap-8">
+        <a href={"https://www.linkedin.com/in/biruk-getu-786048320/"} target="_blank" rel="noopener noreferrer">
            <GrLinkedin className="w-10 h-10 my-3"/>
-           <FaGoogle className="w-10 h-10 my-3" />
+        </a>
+           
+          <p title="copy email address" onClick={copyToClipboard}>
+            <FaGoogle className="w-10 h-10 my-3" />
+            <Toaster position="top-right" />
+          </p>
+        
+        <a href={"https://github.com/burukgetu/"} target="_blank" rel="noopener noreferrer">
            <FaGithub className="w-10 h-10 my-3 "/>
+        </a>
         </div>
         <div className="flex justify-center  sm:w-80 items-center">
           <svg className="avail" width="16" height="16" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
