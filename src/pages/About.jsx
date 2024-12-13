@@ -92,6 +92,16 @@ function About() {
             <p>Next</p>
             <img src="/reddot.svg" alt="" />
             <p>Redux</p>
+            <img src="/reddot.svg" alt="" />
+            <p>Node</p>
+            <img src="/reddot.svg" alt="" />
+            <p>Mongo</p>
+            <img src="/reddot.svg" alt="" />
+            <p>MySql</p>
+            <img src="/reddot.svg" alt="" />
+            <p>Postresql</p>
+            <img src="/reddot.svg" alt="" />
+            <p>Git</p>
           </div>
 
         </div>

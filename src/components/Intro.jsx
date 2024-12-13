@@ -60,7 +60,7 @@ function Intro() {
       lg:flex-row lg:gap-12">
       <div className="w-[284px] flex flex-col items-center gap-0 
         justify-center lg:pt-8 font-[300] z-10 overflow-hidden">
-        <h1 className="text-[100px] lg:text-[8vw] lg:self-end lg:tracking-none leading-[1] tracking-wide">
+        <h1 className="text-[100px] lg:text-[110px] lg:self-end lg:tracking-none leading-[1] tracking-wide">
           {/* Biruk Getu */}
           <StaggeredText text={"Biruk Getu"} from={"end"}/>
         </h1>
@@ -117,7 +117,7 @@ function Intro() {
         />
       </div>
       <div className="lg:w-[280px] lg:h-[208px]">
-        <h1 className="text-[60px] md:text-[80px] lg:text-[9vw] font-[300] 
+        <h1 className="text-[60px] md:text-[80px] lg:text-[110px] font-[300] 
         leading-[.8] pt-3">
           {/* Front-End Developer */}
           <StaggeredText text={"Fullstack"} from={"start"} />

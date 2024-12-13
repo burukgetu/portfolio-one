@@ -28,7 +28,7 @@ const Projects = ({ project, images = [] }) => {
         // Center image
         xPos = 0;
         if (window.innerWidth < 600) {
-        scale = 1.4;
+        scale = 2.8;
         } else if (window.innerWidth < 400) {
           scale = 1;
         } else {
