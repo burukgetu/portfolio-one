@@ -26,6 +26,9 @@ const SplashScreen = () => {
   ];
 
   useEffect(() => {
+    if (sessionStorage.getItem('hasRun') === 'true') {
+      setShow(false); // If animation already ran in this session, exit early
+    }
     let index = 0;
 
     // Function to change the displayed text
@@ -57,8 +60,10 @@ const SplashScreen = () => {
               scaleY: 1.5,
               duration: 1,
               delay: 0.1,
-              
-              onComplete: () => setShow(false)
+              onComplete: () => {
+                setShow(false);
+                sessionStorage.setItem('hasRun', 'true'); // Mark animation as completed
+              }
             });
           }
         }
